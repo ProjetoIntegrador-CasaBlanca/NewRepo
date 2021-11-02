@@ -83,7 +83,7 @@
             <tr>
                 <td>
                     <asp:Button ID="Button9" runat="server" CssClass="btnmenu" Text="Restrição" 
-                        CausesValidation="False" PostBackUrl="~/Panalty.aspx" />
+                        CausesValidation="False" PostBackUrl="~/Panalty.aspx" Visible="False" />
                 </td>
             </tr>
             <tr>

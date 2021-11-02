@@ -24,14 +24,16 @@ public partial class MasterPage : System.Web.UI.MasterPage
         Session["email"] = null;
         Response.Redirect("Default.aspx");
     }
+
+
+
+
+
+
+
+
     protected void Button11_Click(object sender, EventArgs e)
     {
 
     }
-
-
-
-
-
-    
 }

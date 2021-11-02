@@ -104,17 +104,17 @@
                         <asp:DropDownList ID="drpmm" runat="server">
                             <asp:ListItem>MM</asp:ListItem>
                             <asp:ListItem>jan</asp:ListItem>
-                            <asp:ListItem>feb</asp:ListItem>
+                            <asp:ListItem>fev</asp:ListItem>
                             <asp:ListItem>mar</asp:ListItem>
-                            <asp:ListItem>apr</asp:ListItem>
-                            <asp:ListItem>may</asp:ListItem>
+                            <asp:ListItem>abr</asp:ListItem>
+                            <asp:ListItem>mai</asp:ListItem>
                             <asp:ListItem>jun</asp:ListItem>
                             <asp:ListItem>jul</asp:ListItem>
-                            <asp:ListItem>aug</asp:ListItem>
-                            <asp:ListItem>sep</asp:ListItem>
-                            <asp:ListItem>oct</asp:ListItem>
+                            <asp:ListItem>ago</asp:ListItem>
+                            <asp:ListItem>set</asp:ListItem>
+                            <asp:ListItem>out</asp:ListItem>
                             <asp:ListItem>nov</asp:ListItem>
-                            <asp:ListItem>dec</asp:ListItem>
+                            <asp:ListItem>dez</asp:ListItem>
                         </asp:DropDownList>
                         <asp:DropDownList ID="drpyyyy" runat="server">
                             <asp:ListItem>YYYY</asp:ListItem>
@@ -140,6 +140,20 @@
                             <asp:ListItem>1999</asp:ListItem>
                              <asp:ListItem>2000</asp:ListItem>
                             <asp:ListItem>2001</asp:ListItem>
+                            <asp:ListItem>2002</asp:ListItem>
+                            <asp:ListItem>2003</asp:ListItem>
+                            <asp:ListItem>2004</asp:ListItem>
+                            <asp:ListItem>2005</asp:ListItem>
+                            <asp:ListItem>2006</asp:ListItem>
+                            <asp:ListItem>2007</asp:ListItem>
+                            <asp:ListItem>2008</asp:ListItem>
+                            <asp:ListItem>2009</asp:ListItem>
+                            <asp:ListItem>2010</asp:ListItem>
+                            <asp:ListItem>2011</asp:ListItem>
+                            <asp:ListItem>2012</asp:ListItem>
+                            <asp:ListItem>2013</asp:ListItem>
+                            <asp:ListItem>2014</asp:ListItem>
+                            <asp:ListItem>2015</asp:ListItem>
                         </asp:DropDownList>
                     </td>
                     <td>
@@ -149,13 +163,13 @@
                     <td class="lbl">
                         Telefone : </td>
                     <td>
-                        <asp:TextBox ID="txtmobile" runat="server" CssClass="txt"></asp:TextBox>
+                        <asp:TextBox ID="txtmobile" runat="server" CssClass="txt" MaxLength="11" OnTextChanged="txtmobile_TextChanged"></asp:TextBox>
                             <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" 
                                 ControlToValidate="txtmobile" ErrorMessage="*" ForeColor="Red" 
                                 SetFocusOnError="True"></asp:RequiredFieldValidator>
                         <asp:RangeValidator ID="RangeValidator1" runat="server" 
                             ControlToValidate="txtmobile" ErrorMessage="*" ForeColor="Red" 
-                            MaximumValue="9999999999" MinimumValue="1000000000" SetFocusOnError="True" 
+                            MaximumValue="99999999999" MinimumValue="1000000000" SetFocusOnError="True" 
                             Type="Double"></asp:RangeValidator>
                         </td>
                     <td>

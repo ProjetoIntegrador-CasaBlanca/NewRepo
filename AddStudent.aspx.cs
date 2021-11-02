@@ -46,14 +46,14 @@ public partial class AddStudent : System.Web.UI.Page
                 FileUpload1.SaveAs(Server.MapPath("~/img/") + FileUpload1.FileName);
                 DateTime bdate = Convert.ToDateTime(drpdd.SelectedItem.Text + " " + drpmm.SelectedItem.Text + " " + drpyyyy.SelectedItem.Text);
                 SAdapter.Insert(txtsname.Text, drpbranch.SelectedItem.Text, txtmobile.Text, txtaddress.Text, txtcity.Text, txtpincode.Text, bdate, gen, txtemail.Text, txtpass.Text,"~/img/"+FileUpload1.FileName);
-                lblmsg.Text = "Student Added Successfully";
+                lblmsg.Text = "Usuário Cadastrado com Sucesso";
            
             }
             else
             {
                 DateTime bdate = Convert.ToDateTime(drpdd.SelectedItem.Text + " " + drpmm.SelectedItem.Text + " " + drpyyyy.SelectedItem.Text);
                 SAdapter.Insert(txtsname.Text, drpbranch.SelectedItem.Text, txtmobile.Text, txtaddress.Text, txtcity.Text, txtpincode.Text, bdate, gen, txtemail.Text, txtpass.Text, "~/img/std.png");
-                lblmsg.Text = "Student Added Successfully";
+                lblmsg.Text = "Usuário Cadastrado com Sucesso";
            
             
             }
@@ -69,5 +69,10 @@ public partial class AddStudent : System.Web.UI.Page
           
 
         }
+    }
+
+    protected void txtmobile_TextChanged(object sender, EventArgs e)
+    {
+
     }
 }

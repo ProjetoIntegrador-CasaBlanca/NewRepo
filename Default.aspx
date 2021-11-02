@@ -104,10 +104,10 @@
                             <tr>
                                 <td class="auto-style5" valign="middle"></td>
                                 <td class="auto-style9" valign="middle">
-                                    <asp:RadioButton ID="rdolibrary" runat="server"  
-                        ForeColor="black" GroupName="a" Text="Admin" />
-&nbsp;<asp:RadioButton ID="rdosudent" runat="server" Checked="True" ForeColor="black" GroupName="a" 
-                        Text="Usuário" />
+                                    <asp:RadioButton ID="rdolibrary" runat="server" Checked="True" 
+                        ForeColor="black" GroupName="a" Text="Admin" Visible="False" />
+&nbsp;<asp:RadioButton ID="rdosudent" runat="server"  ForeColor="black" GroupName="a" 
+                        Text="Usuário" Visible="False" />
                                 </td>
                             </tr>
                             <tr>
