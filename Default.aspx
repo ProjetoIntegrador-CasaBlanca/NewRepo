@@ -102,21 +102,21 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td class="auto-style5" valign="middle"></td>
+                                <td class="auto-style5" valign="middle">&nbsp;</td>
                                 <td class="auto-style9" valign="middle">
-                                    <asp:RadioButton ID="rdolibrary" runat="server" Checked="True" 
-                        ForeColor="black" GroupName="a" Text="Admin" Visible="False" />
-&nbsp;<asp:RadioButton ID="rdosudent" runat="server"  ForeColor="black" GroupName="a" 
-                        Text="Usuário" Visible="False" />
+                                    <asp:Button ID="Button1" runat="server" Text="Login" 
+                        Width="49px" Font-Size="10pt" onclick="Button1_Click" BackColor="Black" ForeColor="White" Height="28px" />
                                 </td>
                             </tr>
                             <tr>
                                 <td class="auto-style23">&nbsp;&nbsp;&nbsp;
     
                                     </td>
-                                <td class="auto-style23" align="justify">&nbsp;<asp:Button ID="Button1" runat="server" Text="Login" 
-                        Width="49px" Font-Size="10pt" onclick="Button1_Click" BackColor="Black" ForeColor="White" Height="28px" />
-                &nbsp;</td>
+                                <td class="auto-style23" align="justify">&nbsp;&nbsp;<asp:RadioButton ID="rdolibrary" runat="server" Checked="True" 
+                        ForeColor="black" GroupName="a" Text="Admin" Visible="False" />
+                                    <asp:RadioButton ID="rdosudent" runat="server"  ForeColor="black" GroupName="a" 
+                        Text="Usuário" Visible="False" />
+                                </td>
                             </tr>
                         </table>
                     </div>

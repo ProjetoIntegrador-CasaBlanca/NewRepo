@@ -11,7 +11,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table class="style1">
     <tr>
-        <td class="tblhead">
+        <td class="tblhead" style="font-family: &quot;Edwardian Script ITC&quot;; font-size: 41px">
             Sala de Leitura — EE Presidente Café Filho</td>
     </tr>
     <tr>
@@ -20,7 +20,7 @@
     </tr>
     <tr>
         <td style="text-align: center">
-            <asp:Image ID="Image2" runat="server" ImageUrl="~/img/books.JPG" Height="483px" Width="442px" />
+            <asp:Image ID="Image2" runat="server" ImageUrl="~/img/books.JPG" Height="448px" Width="442px" />
         </td>
     </tr>
 </table>

@@ -14,7 +14,7 @@
         <div id="main"><div id="menu">
         <table style="width:100%">
             <tr>
-                <td class="tblhead">
+                <td class="tblhead" style="font-family: &quot;Edwardian Script ITC&quot;; font-size: 25px">
                     Bem vindo
                     </td>
             </tr>

@@ -26,7 +26,7 @@ public partial class bookreport : System.Web.UI.Page
             drpbranch.DataTextField = "Branchname";
             drpbranch.DataValueField = "Branchid";
             drpbranch.DataBind();
-            drpbranch.Items.Insert(0, "SELECT");
+            drpbranch.Items.Insert(0, "Selecione");
             MultiView1.ActiveViewIndex = -1;
 
             PubDT = PubAdapter.Select();
@@ -34,7 +34,7 @@ public partial class bookreport : System.Web.UI.Page
             drppublication.DataTextField = "Publication";
             drppublication.DataValueField = "pid";
             drppublication.DataBind();
-            drppublication.Items.Insert(0, "SELECT");
+            drppublication.Items.Insert(0, "Selecione");
             
         }
     }
@@ -52,7 +52,7 @@ public partial class bookreport : System.Web.UI.Page
             BookDT = BookAdapter.Select_By_Branch(drpbranch.SelectedItem.Text);
             GridView1.DataSource = BookDT;
             GridView1.DataBind();
-            lblmsg0.Text = GridView1.Rows.Count.ToString()+ " - Records Found";
+            lblmsg0.Text = GridView1.Rows.Count.ToString()+ " - Registros Encontrados";
            
             MultiView1.ActiveViewIndex = 0;
         }
@@ -63,7 +63,7 @@ public partial class bookreport : System.Web.UI.Page
         {
             GridView1.DataSource = null;
             GridView1.DataBind();
-            lblmsg.Text = "Select Publication";
+            lblmsg.Text = "Slecione a Editora";
             lblmsg.ForeColor = System.Drawing.Color.Red; MultiView1.ActiveViewIndex = -1;
         }
         else
@@ -72,7 +72,7 @@ public partial class bookreport : System.Web.UI.Page
             BookDT = BookAdapter.Select_By_Publication(drppublication.SelectedItem.Text);
             GridView1.DataSource = BookDT;
             GridView1.DataBind();
-            lblmsg0.Text = GridView1.Rows.Count.ToString() + " - Records Found";
+            lblmsg0.Text = GridView1.Rows.Count.ToString() + " - Registros Encontrados";
            
         }
     }

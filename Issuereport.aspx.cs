@@ -24,7 +24,7 @@ public partial class Issuereport : System.Web.UI.Page
             drpbranch.DataTextField = "Branchname";
             drpbranch.DataValueField = "Branchid";
             drpbranch.DataBind();
-            drpbranch.Items.Insert(0, "SELECT");
+            drpbranch.Items.Insert(0, "Selecione");
            // MultiView1.ActiveViewIndex = -1;
         }
 
@@ -36,7 +36,7 @@ public partial class Issuereport : System.Web.UI.Page
         drpstudent.DataTextField = "Studentname";
         drpstudent.DataValueField = "sid";
         drpstudent.DataBind();
-        drpstudent.Items.Insert(0, "SELECT");
+        drpstudent.Items.Insert(0, "Selecione");
     }
     protected void Button11_Click(object sender, EventArgs e)
     {

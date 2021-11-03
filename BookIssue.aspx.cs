@@ -30,7 +30,7 @@ public partial class BookIssue : System.Web.UI.Page
                 drpbranch.DataTextField = "Branchname";
                 drpbranch.DataValueField = "Branchid";
                 drpbranch.DataBind();
-                drpbranch.Items.Insert(0, "SELECT");
+                drpbranch.Items.Insert(0, "Selecione");
                 
             
             PubDT = PubAdapter.Select();
@@ -38,8 +38,8 @@ public partial class BookIssue : System.Web.UI.Page
             drppublication.DataTextField = "Publication";
             drppublication.DataValueField = "pid";
             drppublication.DataBind();
-            drppublication.Items.Insert(0, "SELECT");
-            drpbook.Items.Insert(0, "SELECT");
+            drppublication.Items.Insert(0, "Selecione");
+            drpbook.Items.Insert(0, "Selecione");
         }
     }
     protected void drppublication_SelectedIndexChanged(object sender, EventArgs e)
@@ -49,7 +49,7 @@ public partial class BookIssue : System.Web.UI.Page
         drpbook.DataTextField = "Bookname";
         drpbook.DataValueField = "Bookid";
         drpbook.DataBind();
-        drpbook.Items.Insert(0, "SELECT");
+        drpbook.Items.Insert(0, "Selecione");
     }
     protected void Button12_Click(object sender, EventArgs e)
     {
@@ -76,12 +76,12 @@ public partial class BookIssue : System.Web.UI.Page
             lblprice.Text = BookDT.Rows[0]["price"].ToString();
             lblqnt.Text = BookDT.Rows[0]["Quantities"].ToString();
             lblaqnt.Text = BookDT.Rows[0]["availableqnt"].ToString();
-            lblrqnt.Text = BookDT.Rows[0]["rentqnt"].ToString();
+            lblrqnt.Text = BookDT.Rows[0]["RentQnt"].ToString();
             lbldetail.Text = BookDT.Rows[0]["Detail"].ToString();
             Image2.ImageUrl = BookDT.Rows[0]["Image"].ToString();
 
             drpstudent.Items.Clear();
-            drpstudent.Items.Insert(0, "SELECT");
+            drpstudent.Items.Insert(0, "Selecione");
         }
     }
     protected void btnissue_Click(object sender, EventArgs e)
@@ -131,7 +131,7 @@ public partial class BookIssue : System.Web.UI.Page
                             lblprice.Text = BookDT.Rows[0]["price"].ToString();
                             lblqnt.Text = BookDT.Rows[0]["Quantities"].ToString();
                             lblaqnt.Text = BookDT.Rows[0]["availableqnt"].ToString();
-                            lblrqnt.Text = BookDT.Rows[0]["rentqnt"].ToString();
+                            lblrqnt.Text = BookDT.Rows[0]["RentQnt"].ToString();
                             lbldetail.Text = BookDT.Rows[0]["Detail"].ToString();
                             Image2.ImageUrl = BookDT.Rows[0]["Image"].ToString();
 
@@ -143,14 +143,14 @@ public partial class BookIssue : System.Web.UI.Page
                             drpbranch.DataTextField = "Branchname";
                             drpbranch.DataValueField = "Branchid";
                             drpbranch.DataBind();
-                            drpbranch.Items.Insert(0, "SELECT");
+                            drpbranch.Items.Insert(0, "Selecione");
                         }
                     }
                 }
             }
         }
         catch {
-            lblissue.Text = "Sorry !!! Error !!!";
+            lblissue.Text = "Desculpe ! Erro !";
         }
     }
     protected void drpbranch_SelectedIndexChanged(object sender, EventArgs e)
@@ -160,6 +160,6 @@ public partial class BookIssue : System.Web.UI.Page
         drpstudent.DataTextField = "Studentname";
         drpstudent.DataValueField = "sid";
         drpstudent.DataBind();
-        drpstudent.Items.Insert(0, "SELECT");
+        drpstudent.Items.Insert(0, "Selecione");
     }
 }

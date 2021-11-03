@@ -35,8 +35,8 @@ public partial class BookReturn : System.Web.UI.Page
             drppublication.DataTextField = "StudentName";
             drppublication.DataValueField = "sid";
             drppublication.DataBind();
-            drppublication.Items.Insert(0, "SELECT");
-            drpbook.Items.Insert(0, "SELECT");
+            drppublication.Items.Insert(0, "Selecione");
+            drpbook.Items.Insert(0, "Selecione");
         }
     }
     protected void Button12_Click(object sender, EventArgs e)
@@ -44,12 +44,12 @@ public partial class BookReturn : System.Web.UI.Page
         if (drppublication.SelectedIndex == 0)
         {
 
-            lblmsg.Text = "Select Student";
+            lblmsg.Text = "Selecione o usuário(a)";
             lblmsg.ForeColor = System.Drawing.Color.Red; MultiView1.ActiveViewIndex = -1;
         }
         else if (drpbook.SelectedIndex == 0)
         {
-            lblmsg.Text = "Select Book";
+            lblmsg.Text = "Selecione o Livro";
             lblmsg.ForeColor = System.Drawing.Color.Red; MultiView1.ActiveViewIndex = -1;
         }
         else

@@ -41,7 +41,7 @@ public partial class Addbook : System.Web.UI.Page
             drppublication.DataTextField = "Publication";
             drppublication.DataValueField = "pid";
             drppublication.DataBind();
-            drppublication.Items.Insert(0, "SELECT");
+            drppublication.Items.Insert(0, "Selecione");
         }
     }
     protected void btnadd_Click(object sender, EventArgs e)
@@ -57,6 +57,10 @@ public partial class Addbook : System.Web.UI.Page
                 if (CheckBoxList1.Items[i].Selected == true)
                 {
                     BookAdapter.Insert(txtbname.Text, txtauthor.Text, txtdetail.Text, Convert.ToDouble(txtprice.Text), drppublication.SelectedItem.Text, CheckBoxList1.Items[i].Text, Convert.ToInt32(txtqnt.Text), Convert.ToInt32(txtqnt.Text), 0, "~/Book/" + FileUpload1.FileName.ToString());
+                    
+                    
+                    
+                    
                     a = 1;
                 }
             

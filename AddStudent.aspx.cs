@@ -21,25 +21,25 @@ public partial class AddStudent : System.Web.UI.Page
             drpbranch.DataTextField = "Branchname";
             drpbranch.DataValueField = "Branchid";
             drpbranch.DataBind();
-            drpbranch.Items.Insert(0, "SELECT");
+            drpbranch.Items.Insert(0, "Selecione");
         }
     }
     protected void btnadd_Click(object sender, EventArgs e)
     {
         if (drpdd.SelectedIndex == 0 || drpmm.SelectedIndex == 0 || drpyyyy.SelectedIndex == 0)
         {
-            lblmsg.Text = "Select Proper BithDate";
+            lblmsg.Text = "Selecione uma data de nascimento adequada";
         }
         else
         {
             string gen="";
             if(rdomale.Checked==true)
             {
-            gen="Male";
+            gen="Masculino";
             }
             else
             {
-            gen="Female";
+            gen="Feminino";
             }
             if (FileUpload1.HasFile)
             {

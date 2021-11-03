@@ -46,6 +46,15 @@
         width: 154px;
         font-size: medium;
     }
+        .auto-style3 {
+            background: #ff6600;
+            color: #fff;
+            font-weight: bold;
+            border: solid 2px black;
+            cursor: pointer;
+            transition: background-color 1s ease;
+            background: #ff6600;
+        }
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -76,6 +85,7 @@
                     <td>
                         <asp:DropDownList ID="drpbook" runat="server" CssClass="txt">
                         </asp:DropDownList>
+                    &nbsp;
                     </td>
                 </tr>
                 <tr>
@@ -86,7 +96,7 @@
                         &nbsp;</td>
                     <td>
                         <asp:Button ID="Button12" runat="server" CssClass="btn" 
-                            onclick="Button12_Click" Text="Buscar" Width="100px" />
+                            onclick="Button12_Click" Text="Buscar" Width="55px" Height="30px" />
                     </td>
                 </tr>
                 </table>

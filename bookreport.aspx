@@ -71,12 +71,25 @@
         .auto-style9 {
             width: 477px;
         }
+        .auto-style10 {
+            text-align: right;
+            color: black;
+            width: 345px;
+            height: 37px;
+        }
+        .auto-style11 {
+            text-align: right;
+            color: black;
+            width: 362px;
+            height: 37px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table class="tbl">
     <tr>
         <td class="tblhead">
+            Relatório de
             Livros</td>
     </tr>
     <tr>
@@ -87,19 +100,23 @@
         <td>
             <table class="style1">
                 <tr>
-                    <td class="style3">
+                    <td class="auto-style10">
                         Nível / Área :
                             <asp:DropDownList ID="drpbranch" runat="server" CssClass="txt">
                             </asp:DropDownList>
+                            &nbsp;&nbsp;
                             <asp:Button ID="btnviewbranch" runat="server" CssClass="btn" Text="Buscar" 
                             onclick="btnviewbranch_Click" />
                     </td>
-                    <td class="style2">
+                    <td class="auto-style11">
+                        <div>
                         Editora :
                             <asp:DropDownList ID="drppublication" runat="server" CssClass="txt">
                             </asp:DropDownList>
+                            &nbsp;&nbsp;
                             <asp:Button ID="btnviewpublication" runat="server" CssClass="btn" 
                             Text="Buscar" onclick="btnviewpublication_Click" />
+                        </div>
                     </td>
                 </tr>
             </table>

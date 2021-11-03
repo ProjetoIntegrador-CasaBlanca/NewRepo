@@ -22,7 +22,7 @@ public partial class Studenteport : System.Web.UI.Page
             drpbranch.DataTextField = "Branchname";
             drpbranch.DataValueField = "Branchid";
             drpbranch.DataBind();
-            drpbranch.Items.Insert(0, "SELECT");
+            drpbranch.Items.Insert(0, "Selecione");
             MultiView1.ActiveViewIndex = -1;
         }
     }
@@ -30,7 +30,7 @@ public partial class Studenteport : System.Web.UI.Page
     {
         if (drpbranch.SelectedIndex == 0)
         {
-            lblmsg.Text = "Select Branch first";
+            lblmsg.Text = "Selecione o nível/área primeiro";
             MultiView1.ActiveViewIndex = -1;
         }
         else
@@ -39,14 +39,14 @@ public partial class Studenteport : System.Web.UI.Page
             GridView1.DataSource = SDT;
             GridView1.DataBind();
             MultiView1.ActiveViewIndex = 0;
-            lbl.Text = GridView1.Rows.Count.ToString() + " Student Found";
+            lbl.Text = GridView1.Rows.Count.ToString() + " Registros Encontrados";
         }
     }
     protected void btnseach_Click(object sender, EventArgs e)
     {
         if (txtsearch.Text == "")
         {
-            lblmsg.Text = "Enter student name";
+            lblmsg.Text = "Insira um nome de Usuário";
         }
         else
         {
@@ -54,7 +54,7 @@ public partial class Studenteport : System.Web.UI.Page
             GridView1.DataSource = SDT;
             GridView1.DataBind();
             MultiView1.ActiveViewIndex = 0;
-            lbl.Text = GridView1.Rows.Count.ToString() + " Student Found";
+            lbl.Text = GridView1.Rows.Count.ToString() + " Usuário Encontrado";
         }
     }
     protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)

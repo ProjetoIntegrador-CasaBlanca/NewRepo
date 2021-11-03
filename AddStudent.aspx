@@ -25,7 +25,7 @@
     </tr>
     <tr>
         <td>
-            <table align="center" class="auto-style1">
+            <table align="center" class="style1">
                 <tr>
                     <td class="lbl">
                         Nome :</td>

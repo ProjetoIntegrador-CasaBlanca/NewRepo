@@ -17,28 +17,41 @@
         {
             width: 202px;
         }
-        .auto-style1 {
-        border: solid 1px #9b9b9b;
-        background: #E1E1E1;
-        margin-left: 3px;
-    }
-    .auto-style2 {
+        .auto-style2 {
         text-align: right;
         color: black;
-        width: 213px;
+        width: 349px;
     }
     .auto-style3 {
-        width: 174px;
+        width: 25px;
     }
         .auto-style4 {
             height: 22px;
         }
+        .auto-style5 {
+            background: #ff6600;
+            color: #fff;
+            font-weight: bold;
+            border: solid 2px black;
+            cursor: pointer;
+            transition: background-color 1s ease;
+            background: #ff6600;
+        }
+        .auto-style6 {
+        text-align: right;
+        color: black;
+        width: 343px;
+    }
+    .auto-style7 {
+        width: 29px;
+        height: 22px;
+    }
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <table class="tbl">
         <tr>
-            <td class="tblhead">
+            <td class="tblhead" align="center">
                 Relatório de Empréstimos</td>
         </tr>
         <tr>
@@ -47,22 +60,20 @@
         </tr>
         <tr>
             <td>
-            <table class="style1">
+            <table class="style1" align="center">
                 <tr>
-                    <td class="auto-style2">
-                        <br />
-                        Buscar por Nível/Área :
-                    </td>
-                    <td class="auto-style3">
-                            <asp:DropDownList ID="drpbranch" runat="server" CssClass="auto-style1" 
-                                AutoPostBack="True" onselectedindexchanged="drpbranch_SelectedIndexChanged" Height="19px">
+                    <td class="auto-style6" align="center" valign="bottom">
+                        Buscar por Nível/Área: <asp:DropDownList ID="drpbranch" runat="server" CssClass="txt" 
+                                AutoPostBack="True" onselectedindexchanged="drpbranch_SelectedIndexChanged" Width="142px">
                             </asp:DropDownList>
-                    </td>
-                    <td class="lbl">
-                            Buscar por Usuário :<asp:DropDownList ID="drpstudent" runat="server" CssClass="txt">
+                    &nbsp;</td>
+                    <td class="auto-style7">
+                            &nbsp;</td>
+                    <td class="lbl" valign="bottom">
+                            Buscar por Usuário: <asp:DropDownList ID="drpstudent" runat="server" CssClass="txt">
                             </asp:DropDownList>
-                            &nbsp;<asp:Button ID="btnseach" runat="server" CssClass="btn" 
-                                onclick="btnseach_Click" Text="Ver" />
+                            &nbsp;&nbsp;&nbsp; <asp:Button ID="btnseach" runat="server" CssClass="tblhead" 
+                                onclick="btnseach_Click" Text="Ver" Height="22px" Width="38px" />
                     </td>
                 </tr>
             </table>

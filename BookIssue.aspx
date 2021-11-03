@@ -47,6 +47,76 @@
         {
             height: 49px;
         }
+        .auto-style2 {
+            text-align: right;
+            color: black;
+            height: 43px;
+            width: 231px;
+        }
+        .auto-style3 {
+            height: 43px;
+        }
+        .auto-style4 {
+            text-align: right;
+            color: black;
+            height: 43px;
+            width: 376px;
+        }
+        .auto-style5 {
+            width: 376px;
+        }
+        .auto-style6 {
+            width: 231px;
+        }
+        .auto-style7 {
+        background: #ff6600;
+        color: #fff;
+        font-weight: bold;
+        border: solid 2px black;
+        cursor: pointer;
+        transition: background-color 1s ease;
+        background: #ff6600;
+    }
+    .auto-style8 {
+        width: 98%;
+        border: solid 1px #ddd;
+        background: #FFF;
+        height: 474px;
+    }
+    .auto-style9 {
+        background: green;
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        height: 30px;
+        background: green;
+        width: 710px;
+    }
+    .auto-style10 {
+        width: 710px;
+    }
+    .auto-style11 {
+        height: 27px;
+        color: #000066;
+        font-size: small;
+        width: 710px;
+    }
+    .auto-style12 {
+        height: 49px;
+        width: 710px;
+    }
+    .auto-style13 {
+        background: green;
+        color: #fff;
+        text-align: center;
+        font-weight: bold;
+        height: 30px;
+        background: green;
+        width: 818px;
+    }
+    .auto-style14 {
+        width: 818px;
+    }
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
@@ -56,54 +126,58 @@
             Empréstimo</td>
     </tr>
     <tr>
-        <td>
+        <td class="auto-style14">
             &nbsp;</td>
     </tr>
     <tr>
-        <td>
+        <td class="auto-style14">
             <table class="style1">
                 <tr>
-                    <td class="lbl">
-                        Editora :
+                    <td class="auto-style4">
+                        Editora:
                             <asp:DropDownList ID="drppublication" runat="server" CssClass="txt" 
                             AutoPostBack="True" 
-                            onselectedindexchanged="drppublication_SelectedIndexChanged">
+                            onselectedindexchanged="drppublication_SelectedIndexChanged" Height="22px">
                                 
                             </asp:DropDownList>
                     </td>
-                    <td class="lbl">
-                        Livro :
-                    </td>
-                    <td>
-                        <asp:DropDownList ID="drpbook" runat="server" CssClass="txt">
+                    <td class="auto-style2">
+                        <div>
+                        Livro:
+                        <asp:DropDownList ID="drpbook" runat="server" CssClass="txt" Height="22px">
                         </asp:DropDownList>
+                    &nbsp;
+                        </div>
+                    </td>
+                    <td class="auto-style3">
+                        &nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Button ID="Button12" runat="server" CssClass="btn" 
+                            onclick="Button12_Click" Text="Buscar" Width="65px" />
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="auto-style5">
                         <asp:Label ID="lblmsg" runat="server"></asp:Label>
                     </td>
-                    <td>
+                    <td class="auto-style6">
                         &nbsp;</td>
                     <td>
-                        <asp:Button ID="Button12" runat="server" CssClass="btn" 
-                            onclick="Button12_Click" Text="Buscar" Width="100px" />
-                    </td>
+                        &nbsp;</td>
                 </tr>
                 </table>
         </td>
     </tr>
     <tr>
-        <td>
+        <td class="auto-style14">
             <asp:MultiView ID="MultiView1" runat="server">
                 <asp:View ID="View2" runat="server">
                     <table class="tbl">
                         <tr>
-                            <td class="tblhead">
+                            <td class="auto-style9">
                                 Detalhe do Livro</td>
                         </tr>
                         <tr>
-                            <td>
+                            <td class="auto-style10">
                                 <table class="style4">
                                     <tr>
                                         <td class="style5" colspan="2">
@@ -201,7 +275,7 @@
                         </tr>
                         <tr>
                             <td style="border-top: 2px solid white; border-bottom: thin solid #FFF; font-weight: 700;" 
-                                class="style13">
+                                class="auto-style11">
                                 Slecione o Usuário&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                 <asp:Label ID="lblissue" runat="server" ForeColor="Red"></asp:Label>
                                 <asp:RangeValidator ID="RangeValidator1" runat="server" 
@@ -213,18 +287,18 @@
                             </td>
                         </tr>
                         <tr>
-                            <td class="style15">
-                                Buscar Nível/Área :
+                            <td class="auto-style12">
+                                Buscar Nível/Área:
                                 <asp:DropDownList ID="drpbranch" runat="server" AutoPostBack="True" 
                                     CssClass="txt" onselectedindexchanged="drpbranch_SelectedIndexChanged" 
                                     Width="120px">
                                 </asp:DropDownList>
-                                &nbsp;Usuário:
+                                &nbsp;&nbsp; Usuário:
                                 <asp:DropDownList ID="drpstudent" runat="server" CssClass="txt" Width="120px">
                                 </asp:DropDownList>
-                                &nbsp;Dias:<asp:TextBox ID="TextBox1" runat="server" CssClass="txt" Width="50px"></asp:TextBox>
-&nbsp;<asp:Button ID="btnissue" runat="server" CssClass="btn" onclick="btnissue_Click" Text="Emprestar" 
-                                    Width="100px" />
+                                &nbsp;&nbsp; Dias:<asp:TextBox ID="TextBox1" runat="server" CssClass="txt" Width="50px"></asp:TextBox>
+&nbsp;<asp:Button ID="btnissue" runat="server" CssClass="auto-style7" onclick="btnissue_Click" Text="Emprestar" 
+                                    Width="87px" Height="30px" />
                             </td>
                         </tr>
                     </table>
