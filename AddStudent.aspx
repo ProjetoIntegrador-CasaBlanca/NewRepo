@@ -55,9 +55,9 @@
                     <td class="lbl">
                         Gênero&nbsp; : </td>
                     <td>
-                        <asp:RadioButton ID="rdomale" runat="server" Checked="True" Text="M" />
+                        <asp:RadioButton ID="rdomale" runat="server"  Text="M" AutoPostBack="True" />
                         &nbsp;&nbsp;&nbsp;
-                        <asp:RadioButton ID="rdofemale" runat="server" Text="F" />
+                        <asp:RadioButton ID="rdofemale" runat="server" Text="F" AutoPostBack="True" />
                     </td>
                     <td>
                         &nbsp;</td>

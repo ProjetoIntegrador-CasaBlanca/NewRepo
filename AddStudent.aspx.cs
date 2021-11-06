@@ -35,11 +35,15 @@ public partial class AddStudent : System.Web.UI.Page
             string gen="";
             if(rdomale.Checked==true)
             {
-            gen="Masculino";
+            gen="Male";
+              
+
             }
             else
             {
-            gen="Feminino";
+            
+             gen ="Female";
+           
             }
             if (FileUpload1.HasFile)
             {
